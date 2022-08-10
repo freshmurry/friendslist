@@ -30,11 +30,12 @@
     
     <%= form.text_field :phone, class:"form-control", placeholder:"Phone Number" %>
   </div>
-
-  <div class="field form-group">
-    
-    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter" %>
+  
+  <div class="input-group">
+    <div class="input-group-addon">@</div>
+      <%= form.text_field :instagram, class:"form-control", placeholder:"Instagram" %>
   </div>
+              
   <div class="field form-group">
     
     <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>

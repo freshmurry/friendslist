@@ -5,9 +5,9 @@
     <%= @friend.last_name %>
   </h1>
   <p class="lead">
-    <%= @friend.email %>  | 
-    <%= @friend.phone %>  |  
-    <%= @friend.twitter %>
+    <td><%= @friend.email %></td>  | 
+    <td><%= @friend.phone %></td>  |  
+    <td>@<%= link_to @friend.instagram, "http://instagram/#{@friend.instagram}", target:"_blank" %></td>
 
   </p>
   <br/>
@@ -19,6 +19,3 @@
 <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
 
 </div>
-
-
-
